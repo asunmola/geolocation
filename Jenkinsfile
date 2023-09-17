@@ -35,7 +35,7 @@ pipeline{
             [[artifactId: 'bioMedical', classifier: '', file: 'target/bioMedical-0.0.4-SNAPSHOT.jar', type: 'jar']], 
             credentialsId: 'Nexus-ID', 
             groupId: 'qa', 
-            nexusUrl: '198.58.119.40:8081/repository/ayodele-repo/', 
+            nexusUrl: '198.58.119.40:8081', 
             nexusVersion: 'nexus3', protocol: 'http', 
             repository: 'ayodele-repo', 
             version: '004'
