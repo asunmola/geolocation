@@ -38,7 +38,7 @@ pipeline{
             nexusUrl: '198.58.119.40:8081', 
             nexusVersion: 'nexus3', protocol: 'http', 
             repository: 'ayodele-repo', 
-            version: '0.0.4'
+            version: '0.0.4-SNAPSHOT'
             }
         }    
     }
