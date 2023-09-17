@@ -1,14 +1,19 @@
 pipeline{
     agent any
     stages {
-        stage('hello'){
+        stage('maven clean'){
             steps{
-            sh 'echo hello'
+            sh 'mvn clean'
             }
         }
-        stage('build'){
+        stage('install'){
             steps{
-            sh 'echo build'
+            sh 'mvn install'
+            }
+        }
+        stage('package'){
+            steps{
+            sh 'mvn package'
             }
         }
         stage('liverpool'){
